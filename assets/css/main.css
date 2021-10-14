@@ -2,12 +2,146 @@
   width: 65px;
   height: 100vh;
   background-color: rgba(37, 37, 37, 0.021);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 0.5px solid rgba(236, 236, 236, 0.219);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
 .sideLeft:hover {
   background-color: rgba(255, 255, 255, 0.123);
+}
+
+.sideLeft .sideleftTop .sideleftTopUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli {
+  width: 65px;
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .sideleft-div {
+  width: 65px;
+  padding: 15px 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .sideleft-div:hover {
+  background-color: rgba(255, 255, 255, 0.144);
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .search-icon {
+  position: relative;
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .search-icon::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: rgba(236, 236, 236, 0.185);
+  bottom: 0;
+  left: 5px;
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .search-icon::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: rgba(236, 236, 236, 0.185);
+  top: 0;
+  left: 5px;
+}
+
+.sideLeft .sideleftButtom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.sideLeft .sideleftButtom .sideleftButtomul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.sideLeft .sideleftButtom .sideleftButtomul .sidelefbuttomli {
+  width: 65px;
+}
+
+.sideLeft .sideleftButtom .sideleftButtomul .sidelefbuttomli .sideleft-div {
+  width: 65px;
+  padding: 15px 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.sideLeft .sideleftButtom .sideleftButtomul .sidelefbuttomli .sideleft-div:hover {
+  background-color: rgba(255, 255, 255, 0.144);
+}
+
+.sideLeft .sideleftButtom .sideleftButtomul .sidelefbuttomli .mobile-app {
+  position: relative;
+}
+
+.sideLeft .sideleftButtom .sideleftButtomul .sidelefbuttomli .mobile-app::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: rgba(236, 236, 236, 0.185);
+  bottom: 0;
+  left: 5px;
+}
+
+.sideLeft .sideleftButtom .sideleftButtomul .sidelefbuttomli .mobile-app::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: rgba(236, 236, 236, 0.185);
+  top: 0;
+  left: 5px;
 }
 
 * {
@@ -53,6 +187,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c-pointer {
+  cursor: pointer;
 }
 
 .wrap {
