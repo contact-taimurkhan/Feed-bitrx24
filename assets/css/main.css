@@ -1,3 +1,15 @@
+.sideLeft {
+  width: 65px;
+  height: 100vh;
+  background-color: rgba(37, 37, 37, 0.021);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.sideLeft:hover {
+  background-color: rgba(255, 255, 255, 0.123);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -56,7 +68,7 @@ p {
 }
 
 .wrap .sideRight {
-  width: 5%;
+  width: 3%;
   height: 100vh;
   background-color: rgba(37, 37, 37, 0.562);
 }
@@ -64,11 +76,5 @@ p {
 .wrap main {
   width: 90%;
   height: 100vh;
-}
-
-.wrap .sideLeft {
-  width: 5%;
-  height: 100vh;
-  background-color: rgba(37, 37, 37, 0.562);
 }
 /*# sourceMappingURL=main.css.map */

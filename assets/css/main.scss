@@ -1,6 +1,7 @@
 @import "var";
 @import "mixin";
 @import "animations";
+@import "sideleft";
 
 * {
   padding: 0;
@@ -45,7 +46,7 @@ align-items: center;
 justify-content: space-between;
     // sideRight
 .sideRight{
-    width: 5%;
+    width: 3%;
     height: 100vh;
     background-color: rgba(37, 37, 37, 0.562);
 }
@@ -59,13 +60,7 @@ main{
 }
 // End main
 
-// sideLeft
-.sideLeft{
-    width: 5%;
-    height: 100vh;
-    background-color: rgba(37, 37, 37, 0.562);
-}
-// End sideLeft
+
 }
 
 
