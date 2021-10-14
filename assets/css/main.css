@@ -56,6 +56,10 @@
   display: -webkit-box;
 }
 
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard main .readFaq {
+  width: 610px;
+}
+
 .sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard main .readFaq .readFaq1 {
   margin-top: 40px;
 }
@@ -67,6 +71,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 .sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard main .readFaq .readFaq1 .readFaq1Heading .faqNumber {
@@ -90,7 +96,7 @@
 .sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard main .readFaq .readFaq1 .readFaq1Heading .faqHeading {
   font-size: 16px;
   font-weight: bold;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard main .readFaq .readFaq1 .readFaq1Ul .readFaq1Li {
@@ -98,6 +104,28 @@
   display: -ms-flexbox;
   display: flex;
   text-align: left;
+  margin-left: 40px;
+  padding: 0px 40px;
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard main .readFaq .readFaq1 .readFaq1Ul .readFaq1Li .readFaq1text {
+  margin-left: 20px;
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard main .readFaq .readFaq1 .readFaq1Ul .readFaq1Li .readFaq1text .readFaq1title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #186ec6;
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard main .readFaq .readFaq1 .readFaq1Ul .readFaq1Li .readFaq1text .readFaq1title:hover {
+  text-decoration: underline;
+}
+
+.sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard main .readFaq .readFaq1 .readFaq1Ul .readFaq1Li .readFaq1text .readFaq1Description {
+  font-size: 12px;
+  line-height: 20px;
+  color: #4c4c4c;
 }
 
 .sideLeft .sideleftTop .sideleftTopUl .sideleftTopli .questionBtnCard .questionBtnCardHeader {
