@@ -1,0 +1,71 @@
+@import "var";
+@import "mixin";
+@import "animations";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  background: url(/assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+li {
+  list-style: none;
+}
+input:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+display: flex;
+align-items: center;
+justify-content: space-between;
+    // sideRight
+.sideRight{
+    width: 5%;
+    height: 100vh;
+    background-color: rgba(37, 37, 37, 0.562);
+}
+// End sideRight
+
+// main
+
+main{
+    width: 90%;
+    height: 100vh;
+}
+// End main
+
+// sideLeft
+.sideLeft{
+    width: 5%;
+    height: 100vh;
+    background-color: rgba(37, 37, 37, 0.562);
+}
+// End sideLeft
+}
+
+
