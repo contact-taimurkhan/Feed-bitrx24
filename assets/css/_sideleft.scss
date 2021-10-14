@@ -23,7 +23,103 @@
 
             .sideleftTopli{
                 width: 65px;
-                
+                position: relative;
+
+                .questionBtnCard{
+                    width: 840px;
+                    position: absolute;
+                    top: 0;
+                    right: 65px;
+                    background-color: rgb(255, 255, 255);
+                    height: 100vh;
+
+                    main{
+                        display: -webkit-box;
+
+                        .readFaq{
+                            .readFaq1{
+                                
+                                margin-top: 40px;
+
+                                .readFaq1Heading{
+                                    display: flex;
+                                    align-items: center;
+                                    .faqNumber{
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 50%;
+                                        border: 2px solid #97e2fb;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        text-align: center;
+                                        font-size: 16px;
+                                    }
+
+                                    .faqHeading{
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        margin-left: 40px;
+                                    }
+                                }
+
+                                .readFaq1Ul{
+
+
+                                    .readFaq1Li{
+                                        display: flex;
+                                        text-align: left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .questionBtnCardHeader{
+                        display: flex;
+                        position: sticky;
+                        
+
+                        .supportlogo{
+                            width: 230px;
+                            padding: 24px 0;
+                            background-color: rgba(238, 242, 244, 0.95);
+                            img{
+                                margin-right: 50px;
+                            }
+                        }
+
+                        .questionBtnHeader{
+                            width: 610px;
+                            padding: 10px 0;
+                            background-color: white;
+                            border-bottom: rgba(168, 168, 168, 0.178) 1px solid;
+
+                            .feedTitle{
+                                font-size: 2rem;
+                            }
+                            .feedP{
+                                font-size: 14px;
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    width: 9px;
+                                    height: 9px;
+                                    left: 167px;
+                                    top: 4px;
+                                    border-radius: 50%;
+                                    background-color: #b7db2a;
+                                }
+                            }
+                        }
+                    }
+                    .questionBtnCardLeft{
+                        width: 230px;
+                        background-color: rgba(238, 242, 244, 0.95);
+                        height: 100vh;
+                    }
+                }
 
                 .sideleft-div{
                     width: 65px;
