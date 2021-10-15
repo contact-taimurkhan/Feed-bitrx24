@@ -1,5 +1,7 @@
 // sideLeft
 .sideLeft{
+    right: 0;
+    top: 0;
     width: 65px;
     height: 100vh;
     background-color: rgba(37, 37, 37, 0.021);
@@ -26,12 +28,14 @@
                 position: relative;
 
                 .questionBtnCard{
+                    
                     width: 840px;
+                    height: auto;
                     position: absolute;
                     top: 0;
                     right: 65px;
                     background-color: rgb(255, 255, 255);
-                    height: 100vh;
+                    height: 2000px;
 
                     main{
                         display: -webkit-box;
@@ -41,31 +45,10 @@
                             width: 610px;
                             .readFaq1{
                                 
-                                margin-top: 40px;
+                                padding: 25px 0px;
+                                border-bottom: 1px solid #ebeaea;
 
-                                .readFaq1Heading{
-                                    display: flex;
-                                    align-items: center;
-                                    margin-left: 30px;
-                                    margin-bottom: 20px;
-                                    .faqNumber{
-                                        width: 30px;
-                                        height: 30px;
-                                        border-radius: 50%;
-                                        border: 2px solid #97e2fb;
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        text-align: center;
-                                        font-size: 16px;
-                                    }
-
-                                    .faqHeading{
-                                        font-size: 16px;
-                                        font-weight: bold;
-                                        margin-left: 20px;
-                                    }
-                                }
+                                @include readFaqNumber;
 
                                 .readFaq1Ul{
 
@@ -74,18 +57,16 @@
                                         display: flex;
                                         text-align: left;
                                         margin-left: 40px;
-                                        padding: 0px 40px;
+                                        padding: 10px 40px;
 
                                         .readFaq1text{
                                             margin-left: 20px;
 
                                             .readFaq1title{
-                                                font-size: 18px;
-                                                margin-bottom: 10px;
-                                                color: rgb(24, 110, 198);
-                                                &:hover{
-                                                    text-decoration: underline;
-                                                }
+                                                
+                                                @include faqTitle;
+
+                                                
                                             }
                                             .readFaq1Description{
                                                 font-size: 12px;
@@ -93,6 +74,75 @@
                                                 color: #4c4c4c;
                                             }
                                         }
+                                    }
+                                }
+                            }
+
+                            .readfaq2{
+                                padding: 25px 0px;
+                                border-bottom: 1px solid #ebeaea;
+
+                                @include readFaqNumber;
+
+                                .faqNumber{
+                                    position: relative;
+                                    &::after{
+                                        position: absolute;
+                                        content: url(/assets/images/help-arrows-down.png);
+                                        top: -140px;
+
+                                    }
+                                }
+
+                                .readfaq2SearchBox{
+                                    position: relative;
+
+                                    input{
+                                        font-family: OpenSans, Helvetica, Arial, sans-serif;
+                                        width: 490px;
+                                        height: 60px;
+                                        padding-left: 15px;
+                                        border: 1px solid #dddcdc;
+                                        font-size: 18px;
+                                        font-weight: 300;
+                                    }
+
+                                    i{
+                                        font-size: 25px;
+                                        color: gray;
+                                        position: absolute;
+                                        right: 80px;
+                                        top: 15px;
+                                    }
+                                }
+                            }
+
+                            .readfaq3{
+                                padding: 25px 0px;
+                                border-bottom: 1px solid #ebeaea;
+
+                                @include readFaqNumber;
+
+                                .faqNumber{
+                                    position: relative;
+                                    &::after{
+                                        position: absolute;
+                                        content: url(/assets/images/help-arrows-left.png);
+                                        top: -55px;
+                                        left: 25px;
+
+                                    }
+                                }
+
+                                .faq3{
+
+                                    .faq3li{
+                                        @include faqTitle;
+                                        padding: 8px;
+                                        text-align: left;
+                                        margin-left: 75px;
+
+                                        @include buttonStyle;
                                     }
                                 }
                             }
