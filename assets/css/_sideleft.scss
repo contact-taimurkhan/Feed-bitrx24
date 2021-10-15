@@ -1,5 +1,187 @@
-// sideLeft
-.sideLeft{
+// <!-- Faq card pop start -->
+
+.questionBtnCard{
+    position: fixed;
+    top: 0;
+    right: 65px;                 
+    // max-width: 840px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: auto;
+
+    .faqmain{
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .questionBtnCardRightside{
+            width: 27%;
+            height: 100%;
+            background-color: rgba(238, 242, 244, 0.95);
+        }
+        .readFaq{
+
+            width: 73%;
+            .readFaq1{
+                
+                padding: 25px 0px;
+                border-bottom: 1px solid #ebeaea;
+
+                @include readFaqNumber;
+
+                .readFaq1Ul{
+                    margin-left: 40px;
+                    padding: 0 40px;
+        
+                    .readFaq1Li{
+                        display: flex;
+                        text-align: left;
+                        margin: 30px 0;
+                        
+
+                        .readFaq1text{
+                            margin-left: 20px;
+
+                            .readFaq1title{
+                                
+                                @include faqTitle;
+
+                                
+                            }
+                            .readFaq1Description{
+                                font-size: 12px;
+                                line-height: 20px;
+                                color: #4c4c4c;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .readfaq2{
+                padding: 30px 0px;
+                border-bottom: 1px solid #ebeaea;
+
+                @include readFaqNumber;
+
+                .faqNumber{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: url(/assets/images/help-arrows-down.png);
+                        top: -140px;
+
+                    }
+                }
+
+                .readfaq2SearchBox{
+                    position: relative;
+                    margin-left: 80px;
+
+                    input{
+                        font-family: OpenSans, Helvetica, Arial, sans-serif;
+                        width: 490px;
+                        height: 60px;
+                        padding-left: 15px;
+                        border: 1px solid #dddcdc;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+
+                    i{
+                        font-size: 25px;
+                        color: gray;
+                        position: absolute;
+                        right: 75px;
+                        top: 15px;
+                    }
+                }
+            }
+
+            .readfaq3{
+                padding: 25px 0px;
+                border-bottom: 1px solid #ebeaea;
+
+                @include readFaqNumber;
+
+                .faqNumber{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: url(/assets/images/help-arrows-left.png);
+                        top: -55px;
+                        left: 25px;
+
+                    }
+                }
+
+                .faq3{
+
+                    .faq3li{
+                        @include faqTitle;
+                        padding: 8px;
+                        text-align: left;
+                        margin-left: 75px;
+
+                        @include buttonStyle;
+                    }
+                }
+            }
+        }
+    }
+
+    .questionBtnCardHeader{
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        
+
+        .supportlogo{
+            padding: 24px 40px;
+            background-color: rgba(238, 242, 244, 0.95);
+            img{
+                margin-right: 50px;
+            }
+        }
+
+        .questionBtnHeader{
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: white;
+            border-bottom: rgba(168, 168, 168, 0.178) 1px solid;
+
+            .feedTitle{
+                font-size: 2rem;
+            }
+            .feedP{
+                font-size: 14px;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 9px;
+                    height: 9px;
+                    left: 160px;
+                    top: 4px;
+                    border-radius: 50%;
+                    background-color: #b7db2a;
+                }
+            }
+        }
+    }
+    .questionBtnCardRight{
+        width: 27%;
+        background-color: rgba(238, 242, 244, 0.95);
+        height: 100vh;
+    }
+}
+// <!-- Faq card pop End -->
+
+// sideRight
+.sideRight{
+    position: fixed;
     right: 0;
     top: 0;
     width: 65px;
@@ -15,187 +197,17 @@
         background-color: rgba(255, 255, 255, 0.123);
     }
 
-    .sideleftTop{
+    .sideRightTop{
 
-        .sideleftTopUl{
+        .sideRightTopUl{
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
 
-            .sideleftTopli{
-                width: 65px;
-                position: relative;
+            .sideRightTopli{
 
-                .questionBtnCard{
-                    
-                    width: 840px;
-                    height: auto;
-                    position: absolute;
-                    top: 0;
-                    right: 65px;
-                    background-color: rgb(255, 255, 255);
-                    height: 2000px;
-
-                    main{
-                        display: -webkit-box;
-
-                        .readFaq{
-
-                            width: 610px;
-                            .readFaq1{
-                                
-                                padding: 25px 0px;
-                                border-bottom: 1px solid #ebeaea;
-
-                                @include readFaqNumber;
-
-                                .readFaq1Ul{
-
-                        
-                                    .readFaq1Li{
-                                        display: flex;
-                                        text-align: left;
-                                        margin-left: 40px;
-                                        padding: 10px 40px;
-
-                                        .readFaq1text{
-                                            margin-left: 20px;
-
-                                            .readFaq1title{
-                                                
-                                                @include faqTitle;
-
-                                                
-                                            }
-                                            .readFaq1Description{
-                                                font-size: 12px;
-                                                line-height: 20px;
-                                                color: #4c4c4c;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            .readfaq2{
-                                padding: 25px 0px;
-                                border-bottom: 1px solid #ebeaea;
-
-                                @include readFaqNumber;
-
-                                .faqNumber{
-                                    position: relative;
-                                    &::after{
-                                        position: absolute;
-                                        content: url(/assets/images/help-arrows-down.png);
-                                        top: -140px;
-
-                                    }
-                                }
-
-                                .readfaq2SearchBox{
-                                    position: relative;
-
-                                    input{
-                                        font-family: OpenSans, Helvetica, Arial, sans-serif;
-                                        width: 490px;
-                                        height: 60px;
-                                        padding-left: 15px;
-                                        border: 1px solid #dddcdc;
-                                        font-size: 18px;
-                                        font-weight: 300;
-                                    }
-
-                                    i{
-                                        font-size: 25px;
-                                        color: gray;
-                                        position: absolute;
-                                        right: 80px;
-                                        top: 15px;
-                                    }
-                                }
-                            }
-
-                            .readfaq3{
-                                padding: 25px 0px;
-                                border-bottom: 1px solid #ebeaea;
-
-                                @include readFaqNumber;
-
-                                .faqNumber{
-                                    position: relative;
-                                    &::after{
-                                        position: absolute;
-                                        content: url(/assets/images/help-arrows-left.png);
-                                        top: -55px;
-                                        left: 25px;
-
-                                    }
-                                }
-
-                                .faq3{
-
-                                    .faq3li{
-                                        @include faqTitle;
-                                        padding: 8px;
-                                        text-align: left;
-                                        margin-left: 75px;
-
-                                        @include buttonStyle;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .questionBtnCardHeader{
-                        display: flex;
-                        position: sticky;
-                        
-
-                        .supportlogo{
-                            width: 230px;
-                            padding: 24px 0;
-                            background-color: rgba(238, 242, 244, 0.95);
-                            img{
-                                margin-right: 50px;
-                            }
-                        }
-
-                        .questionBtnHeader{
-                            width: 610px;
-                            padding: 10px 0;
-                            background-color: white;
-                            border-bottom: rgba(168, 168, 168, 0.178) 1px solid;
-
-                            .feedTitle{
-                                font-size: 2rem;
-                            }
-                            .feedP{
-                                font-size: 14px;
-                                position: relative;
-                                &::before{
-                                    content: "";
-                                    position: absolute;
-                                    width: 9px;
-                                    height: 9px;
-                                    left: 167px;
-                                    top: 4px;
-                                    border-radius: 50%;
-                                    background-color: #b7db2a;
-                                }
-                            }
-                        }
-                    }
-                    .questionBtnCardLeft{
-                        width: 230px;
-                        background-color: rgba(238, 242, 244, 0.95);
-                        height: 100vh;
-                    }
-                }
-
-                .sideleft-div{
+                .sideRight-div{
                     width: 65px;
                     padding: 15px 0;
                     transition: all .3s ease;
@@ -234,26 +246,26 @@
         }
     }
 
-    .sideleftButtom{
+    .sideRightButtom{
         display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
 
-            .sideleftButtomul{
+            .sideRightButtomul{
 
                 display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
 
-            .sidelefbuttomli{
+            .sideRightbuttomli{
 
 
                 width: 65px;
                 
 
-                .sideleft-div{
+                .sideRight-div{
                     width: 65px;
                     padding: 15px 0;
                     transition: all .3s ease;
@@ -290,4 +302,4 @@
             }
     }
 }
-// End sideLeft
+// End sideRight
