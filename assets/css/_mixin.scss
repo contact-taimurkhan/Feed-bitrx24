@@ -47,6 +47,7 @@
 
   @mixin buttonStyle {
     button{
+      cursor: pointer;
       padding: 10px 30px;
       border-radius: 30px;
       border: 2px solid #0b66c3;
