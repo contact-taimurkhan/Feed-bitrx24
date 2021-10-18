@@ -18,6 +18,42 @@
             width: 30%;
             // height: 100%;
             background-color: rgba(238, 242, 244, 0.95);
+
+            .faqBtn{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                
+                .faqBtnli{
+                    width: 100%;
+
+                    .faqbtna{
+                        position: relative;
+                        width: 100%;
+                        display: block;
+                        padding: 12px 57px;
+                        font-size: 14px;
+                        color: #7a7a7a;
+                        transition: all .3s ease;
+                        &:hover{
+                            background-color: #e1e4ec;
+                            &::after{
+                                position: absolute;
+                                content: "SHOW";
+                                top: 16px;
+                                font-size: 9px;
+                                right: 23px;
+                            }
+
+                        }
+                    }
+                }
+
+                .faqBtnliTask{
+                    margin-top: 25px;
+                }
+            }
         }
         .readFaq{
 
