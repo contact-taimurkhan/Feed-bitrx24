@@ -53,6 +53,26 @@
                 .faqBtnliTask{
                     margin-top: 25px;
                 }
+
+                .faqBtnliMore{
+
+                    .faqBtnliMoreA{
+                        position: relative;
+                        transition: all .3s ease;
+                        &:hover{
+                            background-color: rgba(238, 242, 244, 0.95);
+                            &::after{
+                                position: absolute;
+                                content: "\f16s";
+                                display: inline-block;
+                                top: 16px;
+                                font-size: 20px;
+                                right: 23px;
+                            }
+
+                        }
+                    }
+                }
             }
         }
         .readFaq{

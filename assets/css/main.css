@@ -66,6 +66,25 @@
   margin-top: 25px;
 }
 
+.questionBtnCard .faqmain .questionBtnCardRightside .faqBtn .faqBtnliMore .faqBtnliMoreA {
+  position: relative;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.questionBtnCard .faqmain .questionBtnCardRightside .faqBtn .faqBtnliMore .faqBtnliMoreA:hover {
+  background-color: rgba(238, 242, 244, 0.95);
+}
+
+.questionBtnCard .faqmain .questionBtnCardRightside .faqBtn .faqBtnliMore .faqBtnliMoreA:hover::after {
+  position: absolute;
+  content: "\f16s";
+  display: inline-block;
+  top: 16px;
+  font-size: 20px;
+  right: 23px;
+}
+
 .questionBtnCard .faqmain .readFaq {
   width: 70%;
 }
