@@ -1,3 +1,26 @@
+.questionBtnCardContainer .faqlistClose {
+  position: absolute;
+  right: 925px;
+  top: 25px;
+  cursor: pointer;
+  padding: 8px 35px;
+  background: rgba(47, 198, 246, 0.95);
+  border-radius: 30px 0 0 30px;
+}
+
+.questionBtnCardContainer .faqlistClose i {
+  font-size: 15px;
+  color: white;
+  margin-left: -19px;
+  text-align: center;
+  padding: 4px 5px;
+  border-radius: 50%;
+}
+
+.questionBtnCardContainer .faqlistClose i:hover {
+  outline: 1px rgba(255, 255, 255, 0.425) solid;
+}
+
 .questionBtnCard {
   position: fixed;
   top: 0;
@@ -93,6 +116,9 @@
 
 .questionBtnCard .faqmain .questionBtnCardRightside .faqBtn .faqBtnliMore .faqMore {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -696,6 +722,37 @@
   background-color: rgba(236, 236, 236, 0.185);
   top: 0;
   left: 5px;
+}
+
+.chatPopcontainer {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 65px;
+  width: 1200px;
+  height: 800px;
+  background: white;
+}
+
+.chatPopcontainer .chatPopCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background-color: #4c4c4c;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop {
+  width: 30%;
+  height: 220px;
+  background-color: #7c7c7c;
+}
+
+.chatPopcontainer .chatPopCard .notificationChatPop {
+  width: 70%;
+  height: 400px;
+  background-color: #b7db2a;
 }
 
 * {

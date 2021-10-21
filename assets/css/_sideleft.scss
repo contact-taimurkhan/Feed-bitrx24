@@ -1,5 +1,29 @@
 // <!-- Faq card pop start -->
 
+.questionBtnCardContainer{
+
+    .faqlistClose{
+        position: absolute;
+        right: 925px;
+        top: 25px;
+        cursor: pointer;
+        padding: 8px 35px;
+        background: rgba(47, 198, 246, 0.95);
+        border-radius: 30px 0 0 30px;
+        i{
+            font-size: 15px;
+            color: white;
+            margin-left: -19px;
+            text-align: center;
+            padding: 4px 5px;          
+            border-radius: 50%;
+            &:hover{
+                outline: 1px rgba(255, 255, 255, 0.425) solid;
+            }
+        }
+    }
+}
+
 .questionBtnCard{
     position: fixed;
     top: 0;
@@ -8,6 +32,8 @@
     height: 100%;
     background-color: rgb(255, 255, 255);
     overflow-x: auto;
+
+    
 
     .faqmain{
         width: 100%;
@@ -79,7 +105,7 @@
 
                     .faqMore{
                         width: 100%;
-                        
+                        display: flex;
                         flex-direction: column;
                         align-items: baseline;
 
@@ -101,6 +127,7 @@
                             }
                         }
                     }
+                    
                 }
             }
         }
@@ -298,6 +325,8 @@
         position: sticky;
         top: 0;
         z-index: 1;
+
+        
         
 
         .supportlogo{
@@ -466,3 +495,34 @@
     }
 }
 // End sideRight
+
+// chatPopcontainer
+.chatPopcontainer{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 65px;
+    width: 1200px;
+    height: 800px;
+    background: white;
+
+    .chatPopCard{
+        display: flex;
+        width: 100%;
+        height: 400px;
+        background-color: #4c4c4c;
+
+        .searchChatPop{
+            width: 30%;
+            height: 220px;
+            background-color: #7c7c7c
+        }
+
+        .notificationChatPop{
+            width: 70%;
+            height: 400px;
+            background-color: #b7db2a;
+        }
+    }
+}
+// End chatPopcontainer
