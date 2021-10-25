@@ -740,13 +740,109 @@
   display: flex;
   width: 100%;
   height: 400px;
-  background-color: #4c4c4c;
 }
 
 .chatPopcontainer .chatPopCard .searchChatPop {
   width: 30%;
   height: 220px;
-  background-color: #7c7c7c;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop {
+  width: 100%;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatsearchbar {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatsearchbar .searchbar {
+  position: relative;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatsearchbar .searchbar input {
+  padding: 8px;
+  margin-left: 28px;
+  border: none;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatsearchbar .searchbar i {
+  font-size: 15px;
+  color: #6e6e6e;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatsearchbar .creat-ul {
+  position: absolute;
+  top: 49px;
+  right: -57px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 7px 11px #3838381a;
+          box-shadow: 6px 7px 11px #3838381a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatsearchbar .creat-ul .creatLi {
+  width: 100%;
+  color: #858585;
+  font-size: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatsearchbar .creat-ul .creatLi:hover {
+  background-color: #c1c1c144;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatsearchbar .creat-ul .creatLi span {
+  padding-left: 20px;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatcreatbtn {
+  position: relative;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatcreatbtn button {
+  padding: 9px 34px;
+  background: #efefef;
+  color: #626262;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.chatPopcontainer .chatPopCard .searchChatPop .searchChatPoptop .searchChatcreatbtn i {
+  position: absolute;
+  font-size: 12px;
+  top: 8px;
+  right: 17px;
+  color: #626262;
 }
 
 .chatPopcontainer .chatPopCard .notificationChatPop {

@@ -510,12 +510,94 @@
         display: flex;
         width: 100%;
         height: 400px;
-        background-color: #4c4c4c;
+        
 
         .searchChatPop{
             width: 30%;
             height: 220px;
-            background-color: #7c7c7c
+           
+
+            .searchChatPoptop{
+                width: 100%;
+
+                .searchChatsearchbar{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px 10px;
+
+                    .searchbar{
+                        position: relative;
+
+                        input{
+                            padding: 8px;
+                            margin-left: 28px;
+                            border: none;
+                        }
+
+                        i{
+                            font-size: 15px;
+                            color: #6e6e6e;
+                            position: absolute;
+                            top: 11px;
+                            left: 10px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .creat-ul{
+                        position: absolute;
+                        top: 49px;
+                        right: -57px;
+                        background-color: white;
+                        border-radius: 5px;
+                        box-shadow: 6px 7px 11px #3838381a;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 15px;
+
+                        .creatLi{
+                            width: 100%;
+                            color: #858585;
+                            font-size: 12px;
+                            padding: 8px 10px;
+                            cursor: pointer;
+                            transition: all .5s;
+
+                            &:hover{
+                                background-color: #c1c1c144;
+                            }
+
+                            span{
+                                padding-left: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .searchChatcreatbtn{
+                    position: relative;
+                    button{
+                        padding: 9px 34px;
+                        background: #efefef;
+                        color: #626262;
+                        border: none;
+                        border-radius: 30px;
+                        cursor: pointer;
+                    }
+
+                    i{
+                        position: absolute;
+                        font-size: 12px;
+                        top: 8px;
+                        right: 17px;
+                        color: #626262;
+                    }
+                }
+            }
         }
 
         .notificationChatPop{
